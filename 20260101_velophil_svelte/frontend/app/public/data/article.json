@@ -59,6 +59,9 @@
     {
       "type": "parallax",
       "sceneId": "scene-1",
+      "width": "full",
+      "align": "center",
+      "spacing": 160,
       "caption": "Grünblauer Auftakt in Neustrelitz"
     },
     {
@@ -93,6 +96,14 @@
       }
     },
     {
+      "type": "parallax",
+      "sceneId": "scene-1",
+      "width": "half",
+      "align": "right",
+      "spacing": 120,
+      "caption": "Blick auf die Kranichrast"
+    },
+    {
       "type": "section",
       "title": "Hier läuft's rund",
       "flip": false,
@@ -108,6 +119,17 @@
     {
       "type": "parallax",
       "sceneId": "scene-2",
+      "width": "half",
+      "align": "left",
+      "spacing": 120,
+      "caption": "Waldpassage & Wegweiser"
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-2",
+      "width": "full",
+      "align": "center",
+      "spacing": 160,
       "caption": "Kaffee, Kuchen & Kettenöl"
     },
     {
@@ -122,6 +144,14 @@
         "src": "/assets/article/segment_10.png",
         "alt": "Bikepacking-Team am Feldweg"
       }
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-2",
+      "width": "full",
+      "align": "center",
+      "spacing": 140,
+      "caption": "Aufbruch Richtung Waren"
     },
     {
       "type": "section",

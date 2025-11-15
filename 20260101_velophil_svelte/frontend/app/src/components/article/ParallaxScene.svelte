@@ -4,12 +4,21 @@
     alt?: string;
   }
 
+  export type ParallaxWidth = 'full' | 'half';
+  export type ParallaxAlign = 'left' | 'center' | 'right';
+
   export let layers: Layer[] = [];
   export let caption = '';
+  export let width: ParallaxWidth = 'full';
+  export let align: ParallaxAlign = 'center';
+  export let spacing = 0;
 </script>
 
-<section class="parallax" style={`--layers:${Math.max(layers.length, 1)}`}
-  aria-label={caption || 'Parallax Szene'}>
+<section
+  class={`parallax ${width} align-${align}`}
+  style={`--spacing:${spacing}px; --layers:${Math.max(layers.length, 1)};`}
+  aria-label={caption || 'Parallax Szene'}
+>
   {#each layers as layer, index}
     <div class="panel" style={`z-index:${index + 1}`}>
       <img src={layer.src} alt={layer.alt} loading="lazy" decoding="async" />
@@ -22,14 +31,34 @@
 
 <style>
   .parallax {
-    --layers: 1;
     position: relative;
-    width: 100vw;
-    margin: 6rem 0;
+    width: var(--width, 100vw);
     left: 50%;
-    margin-left: -50vw;
-    height: calc(var(--layers) * 100vh);
+    margin-left: calc(-50vw + var(--offset, 0px));
+    height: calc(var(--layers, 1) * 100vh + var(--spacing, 0px));
+    margin: 6rem 0;
     pointer-events: none;
+  }
+
+  .parallax.full {
+    --width: 100vw;
+    --offset: 0px;
+  }
+
+  .parallax.half {
+    --width: clamp(320px, 48vw, 540px);
+  }
+
+  .parallax.align-left {
+    --offset: -42vw;
+  }
+
+  .parallax.align-center {
+    --offset: -16vw;
+  }
+
+  .parallax.align-right {
+    --offset: 8vw;
   }
 
   .panel {
@@ -39,7 +68,7 @@
     overflow: hidden;
   }
 
-  img {
+  .panel img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -56,5 +85,38 @@
     text-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
     font-weight: 600;
     z-index: 60;
+  }
+
+  .parallax::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0 0;
+    height: var(--spacing, 0px);
+  }
+
+  @media print {
+    .parallax {
+      position: static;
+      width: 100%;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      height: auto;
+      --offset: 0px;
+    }
+
+    .panel {
+      position: static;
+      height: auto;
+    }
+
+    .panel img {
+      transform: none;
+    }
+
+    .caption {
+      position: static;
+      margin-top: 1rem;
+    }
   }
 </style>

@@ -65,6 +65,9 @@
               <ParallaxScene
                 layers={scenesById[block.sceneId].layers}
                 caption={block.caption ?? scenesById[block.sceneId].caption}
+                width={block.width ?? 'full'}
+                align={block.align ?? 'center'}
+                spacing={block.spacing ?? 0}
               />
             {/if}
           {:else if block.type === 'gallery'}
