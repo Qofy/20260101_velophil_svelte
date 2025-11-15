@@ -8,13 +8,12 @@
     "badge": {
       "label": "Gefördert durch",
       "logo": "/assets/article/top_section.png",
-      "alt": "EU Förderhinweis"
+      "alt": "Hinweis auf Förderung"
     }
   },
   "nav": {
     "brand": {
-      "label": "MV tut gut.",
-      "logo": "/assets/article/top_section.png"
+      "label": "MV tut gut."
     },
     "actions": [
       { "label": "Karte", "icon": "map" },
@@ -30,101 +29,108 @@
   "hero": {
     "image": {
       "src": "/assets/article/hero_section.png",
-      "alt": "Drei Freunde mit Rädern am Wasser",
+      "alt": "Drei Freundinnen mit Gravelbikes am Wasser",
       "width": 1425,
       "height": 768
     },
-    "kicker": "Perfekte Aussichten",
+    "kicker": "Bikepacking",
     "headline": "Bikepacking in der Seenplatte und der Mecklenburgischen Schweiz",
     "subline": "Mikroabenteuer vor der Haustür"
   },
-  "video": {
-    "poster": "/assets/article/section1.png",
-    "title": "YouTube Video blockiert",
-    "body": "Entsprechend Ihrer Einwilligungseinstellungen werden Inhalte von YouTube Video derzeit blockiert.",
-    "actions": [
-      { "label": "Mehr Infos", "variant": "secondary" },
-      { "label": "Zustimmen", "variant": "primary" }
-    ]
-  },
-  "parallaxScenes": [
+  "blocks": [
     {
-      "id": "scene-1",
-      "height": 760,
-      "layers": [
-        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_1.png", "speed": 4, "alt": "Parkübersicht" },
-        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_2.png", "speed": 7, "alt": "Map Overlay" },
-        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_3.png", "speed": 9, "alt": "Headline Layer" },
-        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_4.png", "speed": 13, "alt": "Intro Copy" },
-        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_5.png", "speed": 16, "alt": "Body Copy" }
-      ],
+      "type": "text-only",
+      "body": [
+        "Es ist Freitagabend, die Temperaturen sind mild, und das Wochenende steht vor der Tür. Perfekte Aussichten also für ein Mikroabenteuer vor der Haustür! Und was wäre da reizvoller als eine Bikepacking-Tour mit Gravelbikes und ein paar Freunden?",
+        "Gerade Ausflügler aus der Hauptstadt können die Route zwischen Neustrelitz und Demmin gut mit der Bahn erreichen. Sie führt durch Wälder, Wiesen und Felder, mitten durch den Müritz-Nationalpark und die Mecklenburgische Schweiz und behält dabei Flüsse, Seen und Feuchtgebiete jederzeit in Reichweite.",
+        "Wer sich fürs Bikepacking ohne Zelt entschieden hat, dem bietet sich im familiengeführten Bett + Bike-Hotel »Kranichrast« in Schwarzendorf eine gute Gelegenheit für die erste Übernachtung."
+      ]
+    },
+    {
+      "type": "video",
+      "poster": "/assets/article/section1.png",
+      "title": "YouTube Video blockiert",
+      "body": "Entsprechend Ihrer Einwilligungseinstellungen werden Inhalte von YouTube derzeit blockiert.",
+      "actions": [
+        { "label": "Mehr Infos", "variant": "secondary" },
+        { "label": "Zustimmen", "variant": "primary" }
+      ]
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-1",
       "caption": "Grünblauer Auftakt in Neustrelitz"
     },
     {
-      "id": "scene-2",
-      "height": 680,
-      "layers": [
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_1.png", "speed": 5, "alt": "Freunde am Tisch" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_2.png", "speed": 8, "alt": "Freunde zweites Bild" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_3.png", "speed": 11, "alt": "Stop & Go" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_4.png", "speed": 14, "alt": "Neue Szene" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_5.png", "speed": 16, "alt": "Unterwegs" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_6.png", "speed": 18, "alt": "Waldweg" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_7.png", "speed": 21, "alt": "Helm Detail" }
-      ],
-      "caption": "Kaffee, Kuchen & Kettenöl"
-    }
-  ],
-  "sections": [
-    {
-      "type": "text",
+      "type": "section",
       "title": "Freitagabend in Neustrelitz",
       "body": [
-        "Es ist Freitagabend, die Temperaturen sind mild und das Wochenende steht vor der Tür. Perfekte Aussichten also für ein Mikroabenteuer vor der Haustür!",
-        "Gerade Ausflügler aus der Hauptstadt können die Route zwischen Neustrelitz und Demmin gut mit der Bahn erreichen. Sie führt durch Wälder, Wiesen und Felder und behält dabei Flüsse, Seen und Feuchtgebiete jederzeit in Reichweite."
+        "»Vorsicht an Gleis 3! Der Regionalexpress aus Berlin fährt ein.« Gerade einmal eine Stunde und fünfzehn Minuten hat er aus dem Zentrum der Hauptstadt bis hierher gebraucht. Und das Beste: Die Räder samt Gepäck hat er gleich mit befördert.",
+        "Mit einem kleinen Schlenker zur historischen Orangerie beginnt das Gravel-Abenteuer. Unterwegs sind die Seen immer ganz nah und die nass glänzende Uferpromenade von Neustrelitz ist der perfekte Spot für den ersten Sonnenuntergang der Tour."
       ],
       "image": {
         "src": "/assets/article/segment_06.png",
-        "alt": "Kaffeepause"
+        "alt": "Pause am See"
       }
     },
     {
       "type": "quote",
-      "quote": "Nichts als Naturgeräusche und sanft rauschende Baumwipfel begleiten die glücklichen Städter in den Schlaf.",
-      "cite": "Bikepacking Tagebuch"
+      "quote": "Nichts als Naturgeräusche und sanft rauschende Baumwipfel begleiten die glücklichen Städter hier in den Schlaf.",
+      "cite": "Bikepacking-Tagebuch"
     },
     {
-      "type": "text",
+      "type": "section",
       "title": "Nichts für Kalorienzähler",
       "subtitle": "Einkehrschwung bei Üdi's Rastplatz",
+      "flip": true,
       "body": [
-        "Wer am nächsten Morgen ausschläft und keine Kalorien zählen muss, der sollte einen Frühstücks-Stopp im benachbarten Biergarten nicht versäumen.",
-        "Üppige Kuchen, herzhafte Fischbrötchen und frischer Kaffee geben Kraft für den zweiten Tag im Sattel – und hinterm Haus steht sogar eine Service-Station mit Kompressor bereit."
+        "Wer am nächsten Morgen ausschläft und keine Kalorien zählen muss, sollte einen Frühstücks-Stopp im benachbarten Biergarten nicht versäumen.",
+        "Üppige Kuchen, herzhafte Fischbrötchen, leckerer Kaffee und andere Kleinigkeiten geben Kraft für den zweiten Tag im Sattel – und hinterm Haus steht eine Service-Station mit Kompressor-Luftpumpe bereit."
       ],
       "image": {
         "src": "/assets/article/segment_07.png",
-        "alt": "Rastplatz"
+        "alt": "Schwedischer Hof"
       }
     },
     {
-      "type": "text",
+      "type": "section",
       "title": "Hier läuft's rund",
+      "flip": false,
       "body": [
-        "Immer den Wegweisern nach geht es Richtung Waren. Unterwegs locken Aussichtspunkte, Badestrände und Moore, die in der Abendsonne golden schimmern.",
-        "Der Tiefwarensee lädt zu einer Abkühlung ein – wer mutig ist, springt einfach in das kristallklare Wasser."
+        "Stop and go entlang des Wegweisers: Immer den Holztafeln nach führt die Route weiter Richtung Waren.",
+        "Der Tiefwarensee ist wunderschön anzusehen und perfekt für einen Sprung ins kühle Nass. Bei entsprechenden Temperaturen ist eine Erfrischung mehr als willkommen."
       ],
       "image": {
         "src": "/assets/article/segment_08.png",
-        "alt": "Wegweiser"
+        "alt": "Wegweiser in der Mecklenburgischen Schweiz"
       }
     },
     {
-      "type": "text",
-      "title": "Ruhe und Musik auf Schloss Ulrischusen",
+      "type": "parallax",
+      "sceneId": "scene-2",
+      "caption": "Kaffee, Kuchen & Kettenöl"
+    },
+    {
+      "type": "section",
+      "title": "Stop and go bei Üdi's Rastplatz",
+      "flip": true,
+      "body": [
+        "Im Schatten alter Kastanien rollt das Trio zum nächsten Boxenstopp. Ein Herz für Radfahrer hat Üdi auch: Hinterm Haus steht eine Service-Station mit Kompressor bereit.",
+        "Von hier aus geht es über kleine Landsträßchen weiter bis in den behaglichen Kurort Waren. Nicht minder beschaulich präsentiert sich auch der folgende Uferweg am Tiefwarensee – er scheint den Bikepackern zuzuwinken: Raus aus den Klamotten und rein ins Wasser!"
+      ],
+      "image": {
+        "src": "/assets/article/segment_10.png",
+        "alt": "Bikepacking-Team am Feldweg"
+      }
+    },
+    {
+      "type": "section",
+      "title": "Ruhe und Musik auf Schloss Ulrichshusen",
       "subtitle": "Perfekter Zwischenstopp",
+      "flip": false,
       "body": [
         "Nach ein paar weiteren Kilometern wartet Schloss & Gut Ulrichshusen mit einem Park zum Durchatmen.",
-        "Wer mag, lauscht in der Konzertscheune klassischer Musik oder rollt direkt weiter Richtung Peene."
+        "Wer mag, lauscht in der Konzertscheune klassischer Musik, besucht das Gutscafé oder rollt direkt weiter Richtung Peene und Demmin."
       ],
       "image": {
         "src": "/assets/article/segment_09.png",
@@ -135,9 +141,33 @@
       "type": "gallery",
       "title": "Unterwegs Impressionen",
       "items": [
-        { "src": "/assets/article/segment_10.png", "alt": "Team lenkt durch die Alleen" },
-        { "src": "/assets/article/segment_12.png", "alt": "Abkühlung am Wasser" },
-        { "src": "/assets/article/segment_15.png", "alt": "Pause im Grünen" }
+        { "src": "/assets/article/segment_10.png", "alt": "Schotterpassage" },
+        { "src": "/assets/article/segment_12.png", "alt": "Abkühlung am Kanal" },
+        { "src": "/assets/article/segment_15.png", "alt": "Aussicht ins Grüne" }
+      ]
+    }
+  ],
+  "parallaxScenes": [
+    {
+      "id": "scene-1",
+      "layers": [
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_1.png", "alt": "Luftbild Schlossgarten" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_2.png", "alt": "Kartenoverlay" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_3.png", "alt": "Schrift Ebene 1" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_4.png", "alt": "Schrift Ebene 2" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_5.png", "alt": "Textabschnitt" }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "layers": [
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_1.png", "alt": "Kaffeepause" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_2.png", "alt": "Freunde am Tisch" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_3.png", "alt": "Textlayer 1" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_4.png", "alt": "Textlayer 2" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_5.png", "alt": "Textlayer 3" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_6.png", "alt": "Waldpassage" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_7.png", "alt": "Helm Detail" }
       ]
     }
   ],
@@ -147,11 +177,7 @@
         "type": "map",
         "title": "In der Nähe",
         "image": "/assets/article/segment_13.png",
-        "pois": [
-          "Neustrelitz",
-          "Waren (Müritz)",
-          "Schloss Ulrichshusen"
-        ]
+        "pois": ["Neustrelitz", "Waren (Müritz)", "Schloss Ulrichshusen"]
       },
       {
         "type": "links",

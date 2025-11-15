@@ -9,73 +9,28 @@
   import GalleryGrid from './components/article/GalleryGrid.svelte';
   import SidebarModules from './components/article/SidebarModules.svelte';
   import FooterCta from './components/article/FooterCta.svelte';
+  import TextBlock from './components/article/TextBlock.svelte';
 
-  interface ArticleData {
-    meta: any;
-    nav: any;
-    hero: any;
-    breadcrumbs: any[];
-    video: any;
-    parallaxScenes: any[];
-    sections: any[];
-    sidebar: any;
-    footer: any;
-  }
-
-  let article: ArticleData | null = null;
+  let article: any = null;
   let loading = true;
   let error = '';
-  let timeline: Array<{ kind: 'section' | 'parallax'; data: any }> = [];
+  let scenesById: Record<string, any> = {};
 
   onMount(async () => {
     try {
       const response = await fetch('/data/article.json');
       if (!response.ok) throw new Error('Konnte Artikel nicht laden');
       article = await response.json();
-      buildTimeline();
+      scenesById = {};
+      article?.parallaxScenes?.forEach((scene: any) => {
+        scenesById[scene.id] = scene;
+      });
     } catch (err) {
       error = err instanceof Error ? err.message : 'Unbekannter Fehler';
     } finally {
       loading = false;
     }
   });
-
-  function buildTimeline() {
-    if (!article) return;
-    const sections = article.sections ?? [];
-    const scenes = article.parallaxScenes ?? [];
-    let alternator = 0;
-
-    const preparedSections = sections.map(section => {
-      if (section.type === 'text') {
-        const flip = alternator % 2 === 1;
-        alternator += 1;
-        return { ...section, flip };
-      }
-      return section;
-    });
-
-    const anchors = [1, 3];
-    const tempTimeline: Array<{ kind: 'section' | 'parallax'; data: any }> = preparedSections.map(section => ({
-      kind: 'section',
-      data: section
-    }));
-
-    let sceneIndex = 0;
-    anchors.forEach(anchor => {
-      if (scenes[sceneIndex]) {
-        const insertionIndex = Math.min(anchor + sceneIndex + 1, tempTimeline.length);
-        tempTimeline.splice(insertionIndex, 0, { kind: 'parallax', data: scenes[sceneIndex] });
-        sceneIndex += 1;
-      }
-    });
-
-    for (; sceneIndex < scenes.length; sceneIndex++) {
-      tempTimeline.push({ kind: 'parallax', data: scenes[sceneIndex] });
-    }
-
-    timeline = tempTimeline;
-  }
 </script>
 
 <svelte:head>
@@ -99,23 +54,28 @@
           date={article.meta.date}
           badge={article.meta.badge}
         />
-        <VideoPlaceholder
-          poster={article.video.poster}
-          title={article.video.title}
-          body={article.video.body}
-          actions={article.video.actions}
-        />
-        {#each timeline as block}
-          {#if block.kind === 'parallax'}
-            <ParallaxScene {...block.data} />
-          {:else}
-            {#if block.data.type === 'gallery'}
-              <GalleryGrid title={block.data.title} items={block.data.items} />
-            {:else}
-              <ArticleSection section={block.data} flip={block.data.flip} />
+
+        {#each article.blocks as block, index}
+          {#if block.type === 'text-only'}
+            <TextBlock body={block.body} />
+          {:else if block.type === 'video'}
+            <VideoPlaceholder poster={block.poster} title={block.title} body={block.body} actions={block.actions} />
+          {:else if block.type === 'parallax'}
+            {#if scenesById[block.sceneId]}
+              <ParallaxScene
+                layers={scenesById[block.sceneId].layers}
+                caption={block.caption ?? scenesById[block.sceneId].caption}
+              />
             {/if}
+          {:else if block.type === 'gallery'}
+            <GalleryGrid title={block.title} items={block.items} />
+          {:else if block.type === 'quote'}
+            <ArticleSection section={{ type: 'quote', quote: block.quote, cite: block.cite }} />
+          {:else}
+            <ArticleSection section={{ ...block, type: 'text' }} flip={block.flip ?? false} />
           {/if}
         {/each}
+
         <FooterCta
           title={article.footer.cta.title}
           body={article.footer.cta.body}

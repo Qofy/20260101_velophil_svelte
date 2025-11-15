@@ -18,7 +18,7 @@
   export let flip = false;
 </script>
 
-<section class={`article-section ${flip ? 'flip' : ''}`}>
+<section class={`article-section ${flip ? 'flip' : ''} ${section.image ? '' : 'single'}`}>
   {#if section.image}
     <figure>
       <img src={section.image.src} alt={section.image.alt} loading="lazy" decoding="async" />
@@ -57,6 +57,10 @@
 
   .article-section.flip > * {
     direction: ltr;
+  }
+
+  .article-section.single {
+    grid-template-columns: 1fr;
   }
 
   figure {
