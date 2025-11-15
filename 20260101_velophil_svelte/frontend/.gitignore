@@ -1,0 +1,9 @@
+target
+Cargo.lock
+node_modules
+.dir_bash_history
+bun.lock
+.yarn
+package-lock.json
+test-results
+app/dist/

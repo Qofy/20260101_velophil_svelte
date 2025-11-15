@@ -1,0 +1,6 @@
+target
+description_backend_data_backup.json.*
+test_server.log
+description_backend.log
+description_backend_data_backup.json
+description_backend_data_backup_*.db
