@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "category": "Urlaubsmagazin",
+    "title": "Bikepacking in der Seenplatte und der Mecklenburgischen Schweiz",
+    "eyebrow": "Mikroabenteuer vor der Haustür",
+    "author": "Anja Kocherscheidt",
+    "date": "22. Juli 2025",
+    "badge": {
+      "label": "Gefördert durch",
+      "logo": "/assets/article/top_section.png",
+      "alt": "EU Förderhinweis"
+    }
+  },
+  "nav": {
+    "brand": {
+      "label": "MV tut gut.",
+      "logo": "/assets/article/top_section.png"
+    },
+    "actions": [
+      { "label": "Karte", "icon": "map" },
+      { "label": "Suche", "icon": "search" },
+      { "label": "Menü", "icon": "menu" }
+    ]
+  },
+  "breadcrumbs": [
+    { "label": "Startseite", "href": "#" },
+    { "label": "Urlaubsmagazin", "href": "#" },
+    { "label": "Bikepacking in der Seenplatte und der Mecklenburgischen Schweiz", "href": "#" }
+  ],
+  "hero": {
+    "image": {
+      "src": "/assets/article/hero_section.png",
+      "alt": "Drei Freunde mit Rädern am Wasser",
+      "width": 1425,
+      "height": 768
+    },
+    "kicker": "Perfekte Aussichten",
+    "headline": "Bikepacking in der Seenplatte und der Mecklenburgischen Schweiz",
+    "subline": "Mikroabenteuer vor der Haustür"
+  },
+  "video": {
+    "poster": "/assets/article/section1.png",
+    "title": "YouTube Video blockiert",
+    "body": "Entsprechend Ihrer Einwilligungseinstellungen werden Inhalte von YouTube Video derzeit blockiert.",
+    "actions": [
+      { "label": "Mehr Infos", "variant": "secondary" },
+      { "label": "Zustimmen", "variant": "primary" }
+    ]
+  },
+  "parallaxScenes": [
+    {
+      "id": "scene-1",
+      "height": 760,
+      "layers": [
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_1.png", "speed": 4, "alt": "Parkübersicht" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_2.png", "speed": 7, "alt": "Map Overlay" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_3.png", "speed": 9, "alt": "Headline Layer" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_4.png", "speed": 13, "alt": "Intro Copy" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_5.png", "speed": 16, "alt": "Body Copy" }
+      ],
+      "caption": "Grünblauer Auftakt in Neustrelitz"
+    },
+    {
+      "id": "scene-2",
+      "height": 680,
+      "layers": [
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_1.png", "speed": 5, "alt": "Freunde am Tisch" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_2.png", "speed": 8, "alt": "Freunde zweites Bild" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_3.png", "speed": 11, "alt": "Stop & Go" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_4.png", "speed": 14, "alt": "Neue Szene" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_5.png", "speed": 16, "alt": "Unterwegs" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_6.png", "speed": 18, "alt": "Waldweg" },
+        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_7.png", "speed": 21, "alt": "Helm Detail" }
+      ],
+      "caption": "Kaffee, Kuchen & Kettenöl"
+    }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "title": "Freitagabend in Neustrelitz",
+      "body": [
+        "Es ist Freitagabend, die Temperaturen sind mild und das Wochenende steht vor der Tür. Perfekte Aussichten also für ein Mikroabenteuer vor der Haustür!",
+        "Gerade Ausflügler aus der Hauptstadt können die Route zwischen Neustrelitz und Demmin gut mit der Bahn erreichen. Sie führt durch Wälder, Wiesen und Felder und behält dabei Flüsse, Seen und Feuchtgebiete jederzeit in Reichweite."
+      ],
+      "image": {
+        "src": "/assets/article/segment_06.png",
+        "alt": "Kaffeepause"
+      }
+    },
+    {
+      "type": "quote",
+      "quote": "Nichts als Naturgeräusche und sanft rauschende Baumwipfel begleiten die glücklichen Städter in den Schlaf.",
+      "cite": "Bikepacking Tagebuch"
+    },
+    {
+      "type": "text",
+      "title": "Nichts für Kalorienzähler",
+      "subtitle": "Einkehrschwung bei Üdi's Rastplatz",
+      "body": [
+        "Wer am nächsten Morgen ausschläft und keine Kalorien zählen muss, der sollte einen Frühstücks-Stopp im benachbarten Biergarten nicht versäumen.",
+        "Üppige Kuchen, herzhafte Fischbrötchen und frischer Kaffee geben Kraft für den zweiten Tag im Sattel – und hinterm Haus steht sogar eine Service-Station mit Kompressor bereit."
+      ],
+      "image": {
+        "src": "/assets/article/segment_07.png",
+        "alt": "Rastplatz"
+      }
+    },
+    {
+      "type": "text",
+      "title": "Hier läuft's rund",
+      "body": [
+        "Immer den Wegweisern nach geht es Richtung Waren. Unterwegs locken Aussichtspunkte, Badestrände und Moore, die in der Abendsonne golden schimmern.",
+        "Der Tiefwarensee lädt zu einer Abkühlung ein – wer mutig ist, springt einfach in das kristallklare Wasser."
+      ],
+      "image": {
+        "src": "/assets/article/segment_08.png",
+        "alt": "Wegweiser"
+      }
+    },
+    {
+      "type": "text",
+      "title": "Ruhe und Musik auf Schloss Ulrischusen",
+      "subtitle": "Perfekter Zwischenstopp",
+      "body": [
+        "Nach ein paar weiteren Kilometern wartet Schloss & Gut Ulrichshusen mit einem Park zum Durchatmen.",
+        "Wer mag, lauscht in der Konzertscheune klassischer Musik oder rollt direkt weiter Richtung Peene."
+      ],
+      "image": {
+        "src": "/assets/article/segment_09.png",
+        "alt": "Schloss Ulrichshusen"
+      }
+    },
+    {
+      "type": "gallery",
+      "title": "Unterwegs Impressionen",
+      "items": [
+        { "src": "/assets/article/segment_10.png", "alt": "Team lenkt durch die Alleen" },
+        { "src": "/assets/article/segment_12.png", "alt": "Abkühlung am Wasser" },
+        { "src": "/assets/article/segment_15.png", "alt": "Pause im Grünen" }
+      ]
+    }
+  ],
+  "sidebar": {
+    "modules": [
+      {
+        "type": "map",
+        "title": "In der Nähe",
+        "image": "/assets/article/segment_13.png",
+        "pois": [
+          "Neustrelitz",
+          "Waren (Müritz)",
+          "Schloss Ulrichshusen"
+        ]
+      },
+      {
+        "type": "links",
+        "title": "Weitere Reviere",
+        "items": [
+          "Von Neustrelitz zur Feldberger Seenlandschaft",
+          "Gravel-Abenteuer zwischen Rostock und Demmin",
+          "Sieben Tage auf dem Eiszeitroute-Rundkurs",
+          "Kurzurlaub in der Mecklenburgischen Schweiz"
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "cta": {
+      "title": "Lust auf mehr Mikroabenteuer?",
+      "body": "Melde dich für den Newsletter an und erhalte monatliche Inspirationen aus MV.",
+      "action": "Newsletter abonnieren"
+    },
+    "legal": ["Datenschutz", "Impressum", "Kontakt"]
+  }
+}
