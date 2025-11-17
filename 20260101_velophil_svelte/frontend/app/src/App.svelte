@@ -53,8 +53,14 @@
           eyebrow={article.meta.eyebrow}
           author={article.meta.author}
           date={article.meta.date}
-          badge={article.meta.badge}
         />
+
+      {#each article.blocks as block, index}
+  {#if block.type === 'video'}
+    <VideoPlaceholder poster={block.poster} title={block.title} body={block.body} actions={block.actions} />
+  {/if}
+{/each}
+
       </div>
       <!-- <div class="article">
         <Breadcrumbs items={article.breadcrumbs} />

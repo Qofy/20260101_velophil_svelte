@@ -50,7 +50,7 @@
       "type": "video",
       "poster": "/assets/article/section1.png",
       "title": "YouTube Video blockiert",
-      "body": "Entsprechend Ihrer Einwilligungseinstellungen werden Inhalte von YouTube derzeit blockiert.",
+      "body": "Entsprechend Ihrer Einwilligungseinstellungen werden Inhalte von „YouTube Video“ derzeit blockiert. Klicken Sie auf „Mehr Infos“, um Details zu dieser Einbindung einzusehen und anschließend eine informierte Entscheidung treffen zu können. Klicken Sie auf „Zustimmen“, um die Einbindung zuzulassen und den Inhalt nachzuladen.",
       "actions": [
         { "label": "Mehr Infos", "variant": "secondary" },
         { "label": "Zustimmen", "variant": "primary" }

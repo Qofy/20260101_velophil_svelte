@@ -28,7 +28,7 @@
 <style>
   .video-placeholder {
     position: relative;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     overflow: hidden;
     margin: 3rem 0;
   }
@@ -57,7 +57,7 @@
 
   p {
     margin: 0;
-    max-width: 32ch;
+    max-width: 72ch;
     font-size: 1rem;
     line-height: 1.5;
   }
