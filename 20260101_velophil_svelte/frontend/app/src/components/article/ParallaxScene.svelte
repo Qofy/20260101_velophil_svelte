@@ -63,13 +63,14 @@
     top: 0;
     height: 100vh;
     overflow: hidden;
+    background-color: bisque;
   }
 
   .panel img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
   }
 
   .caption {

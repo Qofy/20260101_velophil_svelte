@@ -45,7 +45,18 @@
   {:else if article}
     <NavBar brand={article.nav.brand} actions={article.nav.actions} />
     <div class="layout">
-      <div class="article">
+      <div>
+        <Breadcrumbs items={article.breadcrumbs}/>
+        
+        <HeroSection
+          hero={article.hero}
+          eyebrow={article.meta.eyebrow}
+          author={article.meta.author}
+          date={article.meta.date}
+          badge={article.meta.badge}
+        />
+      </div>
+      <!-- <div class="article">
         <Breadcrumbs items={article.breadcrumbs} />
         <HeroSection
           hero={article.hero}
@@ -87,12 +98,32 @@
           legal={article.footer.legal}
         />
       </div>
-      <SidebarModules modules={article.sidebar.modules} />
+      <SidebarModules modules={article.sidebar.modules} /> -->
     </div>
   {/if}
 </main>
 
+
 <style>
+ :global(body) {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f3f6fb;
+    color: #1c2f3f;
+  }
+
+  .layout{
+      display: grid;
+    grid-template-columns: minmax(0, 2.5fr) ;
+    gap: clamp(1.5rem, 4vw, 4rem);
+     width: min(1000px, 90vw); 
+     /* overflow-x: hidden;  */
+    margin: 0 auto;
+    padding-bottom: 4rem; 
+  
+  }
+</style>
+<!-- <style>
   :global(body) {
     margin: 0;
     font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -107,7 +138,7 @@
 
   .layout {
       display: grid;
-    grid-template-columns: minmax(0, 2.5fr) minmax(220px, 1fr);
+    grid-template-columns: minmax(0, 2.5fr) minmax(220px, 250px);
     gap: clamp(1.5rem, 4vw, 4rem);
      width: min(1200px, 90vw); 
      /* overflow-x: hidden;  */
@@ -140,4 +171,4 @@
       padding-top: 0;
     }
   }
-</style>
+</style> -->

@@ -28,7 +28,7 @@
   ],
   "hero": {
     "image": {
-      "src": "/assets/article/hero_section.png",
+      "src": "/assets/article/hero_section.jpg",
       "alt": "Drei Freundinnen mit Gravelbikes am Wasser",
       "width": 1425,
       "height": 768
@@ -98,7 +98,7 @@
     {
       "type": "parallax",
       "sceneId": "scene-1",
-      "width": "half",
+      "width": "full",
       "align": "right",
       "spacing": 120,
       "caption": "Blick auf die Kranichrast"
@@ -119,7 +119,7 @@
     {
       "type": "parallax",
       "sceneId": "scene-2",
-      "width": "half",
+      "width": "full",
       "align": "left",
       "spacing": 120,
       "caption": "Waldpassage & Wegweiser"
