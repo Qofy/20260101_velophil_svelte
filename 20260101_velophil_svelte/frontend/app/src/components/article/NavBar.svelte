@@ -43,8 +43,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.75rem 2rem;
-    background: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 1px 8px rgba(19, 33, 60, 0.08);
+    height: auto;
+    /* background: rgba(255, 255, 255, 0.92); */
+    /* box-shadow: 0 1px 8px rgba(19, 33, 60, 0.08); */
     backdrop-filter: blur(8px);
   }
 
@@ -72,12 +73,14 @@
 
   .nav-btn {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 0.35rem;
     border: none;
     background: transparent;
     font: inherit;
-    font-weight: 600;
+    font-weight: 300;
+    font-size: 13px;
     color: #0d3150;
     letter-spacing: 0.02em;
     cursor: pointer;
@@ -85,8 +88,8 @@
   }
 
   .nav-btn svg {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     fill: currentColor;
   }
 
