@@ -57,6 +57,9 @@
   .hero {
     position: relative;
     padding-bottom: 2rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
   }
 
   .meta {
@@ -73,11 +76,11 @@
   }
 
   h1 {
-    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
     line-height: 1.1;
     color: #0f2a44;
     margin: 0 0 0.75rem;
-    font-weight: 500;
+    font-weight: 300;
   }
 
   .subline {

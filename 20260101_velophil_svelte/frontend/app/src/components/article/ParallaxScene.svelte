@@ -32,21 +32,18 @@
 <style>
   .parallax {
     position: relative;
-    width: var(--width, 100vw);
-    left: 50%;
-    margin-left: calc(-50vw + var(--offset, 0px));
+    width: 100%;
     height: calc(var(--layers, 1) * 100vh + var(--spacing, 0px));
     margin: 6rem 0;
     pointer-events: none;
   }
 
   .parallax.full {
-    --width: 100vw;
-    --offset: 0px;
+    width: 100%;
   }
 
   .parallax.half {
-    --width: clamp(320px, 48vw, 540px);
+    width: clamp(320px, 48%, 540px);
   }
 
   .parallax.align-left {

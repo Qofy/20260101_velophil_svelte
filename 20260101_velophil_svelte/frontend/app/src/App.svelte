@@ -59,6 +59,7 @@
           {#if block.type === 'text-only'}
             <TextBlock body={block.body} />
           {:else if block.type === 'video'}
+
             <VideoPlaceholder poster={block.poster} title={block.title} body={block.body} actions={block.actions} />
           {:else if block.type === 'parallax'}
             {#if scenesById[block.sceneId]}
@@ -105,16 +106,18 @@
   }
 
   .layout {
-    display: grid;
+      display: grid;
     grid-template-columns: minmax(0, 2.5fr) minmax(220px, 1fr);
     gap: clamp(1.5rem, 4vw, 4rem);
-    width: min(1200px, 90vw);
+     width: min(1200px, 90vw); 
+     /* overflow-x: hidden;  */
     margin: 0 auto;
-    padding-bottom: 4rem;
+    padding-bottom: 4rem; 
   }
 
   .article {
     padding: 1rem 0 0;
+  
   }
 
   .state {
