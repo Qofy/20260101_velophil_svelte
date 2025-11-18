@@ -11,6 +11,7 @@
   import FooterCta from './components/article/FooterCta.svelte';
   import TextBlock from './components/article/TextBlock.svelte';
   import Figure from './components/Figure.svelte';
+  import ArticleSplitScreen from './components/article/ArticleSplitScreen.svelte';
 
   let article: any = null;
   let loading = true;
@@ -85,6 +86,8 @@
           spacing={firstScene3Block.spacing ?? 0}
         />
       {/if}
+
+      <ArticleSplitScreen/>
       
       <!-- <div class="article">
         <Breadcrumbs items={article.breadcrumbs} />

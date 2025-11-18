@@ -28,8 +28,8 @@
 
   .tb-header {
     margin: 0 0 1rem;
-    font-size: 1.6rem;
+    font-size: 3rem;
     color: #0f2a44;
-    font-weight: 500;
+    font-weight: 300;
   }
 </style>
