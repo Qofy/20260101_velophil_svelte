@@ -39,11 +39,16 @@
   }
 
   .parallax.full {
-    width: 100%;
+    width: 99vw;
+    left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   }
 
   .parallax.half {
     width: clamp(320px, 48%, 540px);
+    
   }
 
   .parallax.align-left {
