@@ -10,6 +10,7 @@
   import SidebarModules from './components/article/SidebarModules.svelte';
   import FooterCta from './components/article/FooterCta.svelte';
   import TextBlock from './components/article/TextBlock.svelte';
+  import Figure from './components/Figure.svelte';
 
   let article: any = null;
   let loading = true;
@@ -44,6 +45,7 @@
     <div class="state error">{error}</div>
   {:else if article}
     <NavBar brand={article.nav.brand} actions={article.nav.actions} />
+
     <div class="layout">
       <div>
         <Breadcrumbs items={article.breadcrumbs}/>
@@ -60,8 +62,10 @@
     <VideoPlaceholder poster={block.poster} title={block.title} body={block.body} actions={block.actions} />
   {/if}
 {/each}
-
       </div>
+      <Figure/>
+
+      
       <!-- <div class="article">
         <Breadcrumbs items={article.breadcrumbs} />
         <HeroSection
