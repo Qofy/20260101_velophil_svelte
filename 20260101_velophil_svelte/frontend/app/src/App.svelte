@@ -12,6 +12,7 @@
   import TextBlock from './components/article/TextBlock.svelte';
   import Figure from './components/Figure.svelte';
   import ArticleSplitScreen from './components/article/ArticleSplitScreen.svelte';
+  import ArticleSplitViewContainer from './components/article/ArticleSplitView_container.svelte';
 
   let article: any = null;
   let loading = true;
@@ -94,6 +95,8 @@
     body={article.splitview.body}
   />
 {/if}
+
+<ArticleSplitViewContainer/>
 
       <!-- <ArticleSplitScreen/>  -->
       <!-- <div class="article">

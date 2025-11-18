@@ -1,4 +1,8 @@
 <script lang="ts">
+    import spliCon1 from "../../../public/assets/parallax/spliCon1.jpg";
+    import spliCon2 from "../../../public/assets/parallax/splitCon2.jpg";
+
+
     // Default image (public path) — use string path to avoid TS import diagnostics
     export let src: string = '/assets/parallax/split.jpg';
     export let header: string = '';
@@ -20,8 +24,10 @@
         {/each}
     </div>
 
-    <div class="split-right">
-        <img src={src} alt="split" />
+    <div class="split-right" style="background-image: url('{spliCon1}');">  
+        <!-- <img src={src} alt="split" /> -->
+        <img src={spliCon2} alt="split" />
+
     </div>
 </figure>
 
@@ -35,6 +41,8 @@
   margin-right: -50vw;
   /* padding: 0; */
   position: relative;
+  overflow: scroll;
+    scrollbar-width: none;
     height: 70vw;
     /* width: 100%; */
     background-repeat: no-repeat;
@@ -45,6 +53,8 @@
     background-size: cover;
     /* background-color: #10d8d8; */
     display: flex;
+    position: relative;
+
 
 }
 
@@ -53,21 +63,29 @@ width: 50%;
 height: 100%;
 }
 
+.split-right{
+    overflow: scroll;
+    scrollbar-width: none;
+    position: relative;
+}
 .split-right img{
-height: 100%;
 width: 100%;
+height: 100%;
+position: absolute;
+top: 1000px;
+object-fit: contain;
+
 }
 
 .figure div:first-child{
     /* background-color: red; */
-    overflow: scroll;
     scrollbar-width: none;
     display: flex;
     flex-direction: column;
      align-items: center;
     padding: 5rem;
-    overflow-x: hidden;
     /* gap: 0; */
+    background-color: brown;
 }
 
 .figure div:first-child h1{
