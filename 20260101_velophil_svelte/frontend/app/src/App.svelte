@@ -70,6 +70,12 @@
       </div>
       <Figure/>
 
+       {#each article.blocks as block, index}
+  {#if block.type === 'text-only'}
+               <TextBlock body={block.body} header={block.header} />
+  {/if}
+{/each}
+
       {#if firstScene3Block && scenesById[firstScene3Block.sceneId]}
         <ParallaxScene
           layers={scenesById[firstScene3Block.sceneId].layers}

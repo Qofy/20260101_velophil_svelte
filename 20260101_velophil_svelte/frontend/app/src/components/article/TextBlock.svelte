@@ -1,8 +1,13 @@
 <script lang="ts">
   export let body: string[] = [];
+  export let header: string | undefined = undefined;
+
 </script>
 
 <section class="text-block">
+  {#if header}
+    <h2 class="tb-header">{header}</h2>
+  {/if}
   {#each body as paragraph}
     <p>{paragraph}</p>
   {/each}
@@ -19,5 +24,12 @@
 
   p {
     margin: 0 0 1.5rem;
+  }
+
+  .tb-header {
+    margin: 0 0 1rem;
+    font-size: 1.6rem;
+    color: #0f2a44;
+    font-weight: 500;
   }
 </style>
