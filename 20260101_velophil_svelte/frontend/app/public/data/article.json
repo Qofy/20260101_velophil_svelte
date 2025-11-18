@@ -118,7 +118,7 @@
     },
     {
       "type": "parallax",
-      "sceneId": "scene-2",
+      "sceneId": "scene-3",
       "width": "full",
       "align": "left",
       "spacing": 120,
@@ -126,7 +126,7 @@
     },
     {
       "type": "parallax",
-      "sceneId": "scene-2",
+      "sceneId": "scene-3",
       "width": "full",
       "align": "center",
       "spacing": 160,
@@ -147,7 +147,7 @@
     },
     {
       "type": "parallax",
-      "sceneId": "scene-2",
+      "sceneId": "scene-3",
       "width": "full",
       "align": "center",
       "spacing": 140,
@@ -189,15 +189,12 @@
       ]
     },
     {
-      "id": "scene-2",
+      "id": "scene-3",
       "layers": [
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_1.png", "alt": "Kaffeepause" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_2.png", "alt": "Freunde am Tisch" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_3.png", "alt": "Textlayer 1" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_4.png", "alt": "Textlayer 2" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_5.png", "alt": "Textlayer 3" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_6.png", "alt": "Waldpassage" },
-        { "src": "/assets/parallax/scene2/20251115_1658_19_velo_animate_scene_2_part_7.png", "alt": "Helm Detail" }
+        { "src": "/assets/parallax/scene3/scene_1.jpg", "alt": "Kaffeepause" },
+        { "src": "/assets/parallax/scene3/scene_2.jpg", "alt": "Freunde am Tisch" },
+        { "src": "/assets/parallax/scene3/scene_3.jpg", "alt": "Textlayer 1" },
+        { "src": "/assets/parallax/scene3/scene_4.jpg", "alt": "Textlayer 2" }
       ]
     }
   ],

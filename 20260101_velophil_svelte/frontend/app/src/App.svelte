@@ -16,6 +16,11 @@
   let loading = true;
   let error = '';
   let scenesById: Record<string, any> = {};
+  let firstScene3Block: any = null;
+
+  $: if (article && Array.isArray(article.blocks)) {
+    firstScene3Block = article.blocks.find((b: any) => b.type === 'parallax' && b.sceneId === 'scene-3') ?? null;
+  }
 
   onMount(async () => {
     try {
@@ -65,6 +70,15 @@
       </div>
       <Figure/>
 
+      {#if firstScene3Block && scenesById[firstScene3Block.sceneId]}
+        <ParallaxScene
+          layers={scenesById[firstScene3Block.sceneId].layers}
+          caption={firstScene3Block.caption ?? scenesById[firstScene3Block.sceneId].caption}
+          width={firstScene3Block.width ?? 'full'}
+          align={firstScene3Block.align ?? 'center'}
+          spacing={firstScene3Block.spacing ?? 0}
+        />
+      {/if}
       
       <!-- <div class="article">
         <Breadcrumbs items={article.breadcrumbs} />
