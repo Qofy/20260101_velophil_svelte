@@ -218,6 +218,15 @@
       }
     ]
   },
+
+  "splitview": {
+    "header": "Ruhe und Musik auf Schloss Ulrichshusen",
+    "head": "Perfekter Zwischenstopp für eine Bikepacking-Tour",
+    "body": [
+      "Nach ein paar weiteren Kilometern durch ebenso üppige wie liebliche Natur wartet mit dem Schloss & Gut Ulrichshusen am gleichnamigen See ein echtes Highlight. Fernab jeder Hektik herrscht rund um dieses Kleinod aus rotem Backstein nichts als Stille – nur unterbrochen vom Zwitschern der Vögel und dem Quaken der Frösche. Dabei hat das seit über 800 Jahren in Familienbesitz befindliche Haus eine turbulente Geschichte zu erzählen: Zuletzt brannte es 1987 aus ungeklärter Ursache bis auf die Grundmauern nieder, wurde ab 1993 liebevoll wieder aufgebaut und 2001 neu eröffnet: Mit Hotelzimmern in Gutshaus, Pferdestall, Schloss, in der Stellmacherei sowie in der Wassermühle, aber auch Ferienwohnungen, einem Restaurant und der Konzertscheune. Hier geben sich alljährlich im Rahmen der Festspiele Mecklenburg-Vorpommern hochkarätige Solisten und Orchester – von Anne-Sophie Mutter bis hin zu Daniel Hope – die Klinke in die Hand.",
+      "Vom Schloss aus fahren die drei Freunde über kleine, von Bruchmauern gesäumte Sträßchen terrassenförmig hinab bis zum Malchiner See. Dabei schweift ihr Blick über pittoreske Dörfchen, hübsche Wälder und Felder; Baumalleen spenden Schatten und Luft, die wie frisch gewaschen wirkt."
+    ]
+  },
   "footer": {
     "cta": {
       "title": "Lust auf mehr Mikroabenteuer?",

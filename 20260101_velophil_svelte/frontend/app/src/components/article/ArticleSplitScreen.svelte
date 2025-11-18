@@ -1,15 +1,28 @@
-<script>
-import split from "../../../public/assets/parallax/split.jpg"
+<script lang="ts">
+    // Default image (public path) — use string path to avoid TS import diagnostics
+    export let src: string = '/assets/parallax/split.jpg';
+    export let header: string = '';
+    export let head: string = '';
+    export let body: string[] = [];
 </script>
 
 <figure class="figure">
-   <div class="overFlow">
-    
-   </div>
+    <div class="overFlow">
 
-   <div class="split-right">
-    <img src={split} alt="split">
-   </div>
+        {#if header}
+            <h1>{header}</h1>
+        {/if}
+        {#if head}
+            <h3>{head}</h3>
+        {/if}
+        {#each body as paragraph}
+            <p>{paragraph}</p>
+        {/each}
+    </div>
+
+    <div class="split-right">
+        <img src={src} alt="split" />
+    </div>
 </figure>
 
 
@@ -30,7 +43,7 @@ import split from "../../../public/assets/parallax/split.jpg"
     scroll-behavior: smooth;
     scrollbar-width: none;
     background-size: cover;
-    background-color: #10d8d8;
+    /* background-color: #10d8d8; */
     display: flex;
 
 }
@@ -40,16 +53,41 @@ width: 50%;
 height: 100%;
 }
 
-
-
-/*  */
-
-/* .overFlow div{
-height: 50%;
+.split-right img{
+height: 100%;
 width: 100%;
 }
-.overFlow div:last-child{
-    padding: 2rem 5rem;
-    font-size: 1.3rem;
-} */
+
+.figure div:first-child{
+    /* background-color: red; */
+    overflow: scroll;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    padding: 5rem;
+    overflow-x: hidden;
+    /* gap: 0; */
+}
+
+.figure div:first-child h1{
+    /* color: red; */
+    font-size: 5rem;
+    line-height: 80px;
+    width: 400px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.figure div:first-child h3{
+    font-size: 2rem;
+    width: 500px;
+    text-align: center;
+}
+
+.figure div:first-child p{
+    font-size: 1.6rem;
+    width: 600px;
+    text-align: center;
+}
 </style>

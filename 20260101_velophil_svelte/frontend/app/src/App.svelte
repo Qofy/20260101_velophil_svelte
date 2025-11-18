@@ -87,8 +87,15 @@
         />
       {/if}
 
-      <ArticleSplitScreen/>
-      
+     {#if article.splitview}
+  <ArticleSplitScreen
+    header={article.splitview.header}
+    head={article.splitview.head}
+    body={article.splitview.body}
+  />
+{/if}
+
+      <!-- <ArticleSplitScreen/>  -->
       <!-- <div class="article">
         <Breadcrumbs items={article.breadcrumbs} />
         <HeroSection
