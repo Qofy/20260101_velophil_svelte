@@ -98,6 +98,18 @@
 
 <ArticleSplitViewContainer/>
 
+<ArticleSplitScreen/>
+<ArticleSplitViewContainer/>
+<TextBlock/>
+{#if firstScene3Block && scenesById[firstScene3Block.sceneId]}
+        <ParallaxScene
+          layers={scenesById[firstScene3Block.sceneId].layers}
+          caption={firstScene3Block.caption ?? scenesById[firstScene3Block.sceneId].caption}
+          width={firstScene3Block.width ?? 'full'}
+          align={firstScene3Block.align ?? 'center'}
+          spacing={firstScene3Block.spacing ?? 0}
+        />
+      {/if}
       <!-- <ArticleSplitScreen/>  -->
       <!-- <div class="article">
         <Breadcrumbs items={article.breadcrumbs} />

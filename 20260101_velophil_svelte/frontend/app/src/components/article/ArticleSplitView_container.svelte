@@ -26,7 +26,10 @@
 
     <div class="split-right" style="background-image: url('{spliCon1}');">  
         <!-- <img src={src} alt="split" /> -->
-        <img src={spliCon2} alt="split" />
+         <div class="split-right-dev" style="background-image: url('{spliCon2}');">
+
+             
+         </div>
 
     </div>
 </figure>
@@ -53,12 +56,12 @@
     background-size: cover;
     /* background-color: #10d8d8; */
     display: flex;
-    position: relative;
+    /* position: relative; */
 
 
 }
 
-.figure div{
+.figure .overFlow, .split-right{
 width: 50%;
 height: 100%;
 }
@@ -66,15 +69,22 @@ height: 100%;
 .split-right{
     overflow: scroll;
     scrollbar-width: none;
-    position: relative;
+     position: relative;
 }
-.split-right img{
+.split-right:first-child div{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.split-right-dev{
 width: 100%;
 height: 100%;
-position: absolute;
 top: 1000px;
-object-fit: contain;
-
+position: absolute;
+background-size: cover;
+background-position: center;
 }
 
 .figure div:first-child{
@@ -85,7 +95,7 @@ object-fit: contain;
      align-items: center;
     padding: 5rem;
     /* gap: 0; */
-    background-color: brown;
+    background-color: yellow;  
 }
 
 .figure div:first-child h1{
