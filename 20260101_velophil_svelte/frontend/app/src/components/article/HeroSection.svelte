@@ -103,7 +103,7 @@
   .eyebrow {
     text-transform: uppercase;
     letter-spacing: 0.38em;
-    color: #4c6d88;
+    color: #1f1d1d;
     font-size: 0.85rem;
     margin-bottom: 0.5rem;
   }
@@ -111,22 +111,24 @@
   h1 {
     font-size: clamp(2.4rem, 4vw, 3.8rem);
     line-height: 1.1;
-    color: #0f2a44;
+    color: #ce2f24;
     margin: 0 0 0.75rem;
     font-weight: 300;
   }
 
   .subline {
     font-size: 1.15rem;
-    color: #24496b;
+        color: #1f1d1d;
     margin: 0 0 1rem;
+    font-weight: 500;
   }
 
   .credits {
     display: flex;
     gap: 0.5rem;
-    color: #4c6d88;
+        color: #1f1d1d;
     font-size: 0.95rem;
+    font-weight: 500;
   }
 
   /* figure {

@@ -15,8 +15,9 @@
 
 <nav class="nav">
   <div class="brand">
-    <div class="logo" aria-hidden="true"></div>
-    <span>{brand?.label}</span>
+    <div class="logo">
+   <img src={brand?.label}  alt="logo"/>
+    </div>
   </div>
   <div class="actions">
     {#each actions as action}
@@ -47,6 +48,8 @@
     /* background: rgba(255, 255, 255, 0.92); */
     /* box-shadow: 0 1px 8px rgba(19, 33, 60, 0.08); */
     backdrop-filter: blur(8px);
+   background-color: #f4b03b;
+
   }
 
   .brand {
@@ -55,14 +58,12 @@
     gap: 0.75rem;
     font-weight: 700;
     font-size: 1.1rem;
-    color: #0d3150;
+     color: #ce2f24;
   }
 
-  .logo {
-    width: 56px;
-    height: 32px;
-    border-radius: 999px 999px 16px 16px;
-    background: linear-gradient(135deg, #ffb100, #ff6c00);
+   .logo {
+    width: 125px;
+    height: 50px;
   }
 
   .actions {
@@ -81,7 +82,7 @@
     font: inherit;
     font-weight: 300;
     font-size: 13px;
-    color: #0d3150;
+    color: #ffff;
     letter-spacing: 0.02em;
     cursor: pointer;
     padding: 0.35rem 0.5rem;

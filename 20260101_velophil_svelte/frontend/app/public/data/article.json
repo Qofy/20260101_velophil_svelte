@@ -1,10 +1,10 @@
 {
   "meta": {
     "category": "Urlaubsmagazin",
-    "title": "Bikepacking in der Seenplatte und der Mecklenburgischen Schweiz",
-    "eyebrow": "Mikroabenteuer vor der Haustür",
-    "author": "Anja Kocherscheidt",
-    "date": "22. Juli 2025",
+    "title": "Cycling means above all practical mobility. It is the best way to get everyday life in Berlin in a flexible and environmentally conscious way. A bigger bike trip is still on my Amazing",
+    "eyebrow": "Velophil.Alt-Moabit 72 10555 Berlin, Mail: team@velophil.de",
+    "author": "Workshop",
+    "date": "Mon to Fri 9-11 and 14-19",
     "badge": {
       "label": "Gefördert durch",
       "logo": "/assets/article/top_section.png",
@@ -13,7 +13,7 @@
   },
   "nav": {
     "brand": {
-      "label": "MV tut gut."
+      "label": "/assets/article/logo.png"
     },
     "actions": [
       { "label": "Karte", "icon": "map" },
@@ -34,8 +34,8 @@
       "height": 768
     },
     "kicker": "Bikepacking",
-    "headline": "Bikepacking in der Seenplatte und der Mecklenburgischen Schweiz",
-    "subline": "Mikroabenteuer vor der Haustür"
+    "headline": "Cycling means above all practical mobility. It is the best way to get everyday life in Berlin in a flexible and environmentally conscious way. A bigger bike trip is still on my Amazing",
+    "subline": "Mon to Fri 12:30-19, Saturday 10-16. 'Advice gladly with appointment'."
   },
   "blocks": [
     {
