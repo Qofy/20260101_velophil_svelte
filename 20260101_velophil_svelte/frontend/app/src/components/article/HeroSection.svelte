@@ -1,14 +1,15 @@
 <script lang="ts">
   import VideoPlaceholder from "./VideoPlaceholder.svelte";
+  import { onDestroy, onMount } from "svelte";
 
-  export interface HeroImage {
-    src: string;
+  interface HeroImage {
+    src: string | string[];
     alt: string;
     width?: number;
     height?: number;
   }
 
-  export interface HeroContent {
+  interface HeroContent {
     kicker?: string;
     headline: string;
     subline?: string;
@@ -19,8 +20,37 @@
   export let eyebrow = '';
   export let author = '';
   export let date = '';
-  // export let badge: { label: string; logo?: string; alt?: string } | null = null;
-  // export let videoBlock: { poster?: string; title: string; body: string; actions: any[] } | null = null;
+  
+  export let images: string[] = [];
+  export let interval: number = 4000;
+  export let autoplay: boolean = true;
+
+  let current = 0;
+  let timer: number | null = null;
+
+  
+  $: heroImages = Array.isArray(hero?.image?.src) ? hero.image.src as string[] : (hero?.image?.src ? [hero.image.src as string] : []);
+  $: imageList = (images && images.length) ? images : heroImages;
+  $: imageUrl = imageList && imageList.length ? imageList[current] : (typeof hero?.image?.src === 'string' ? hero.image.src : undefined);
+
+  function start() {
+    if (!autoplay) return;
+    if (!imageList || imageList.length <= 1) return;
+    stop();
+    timer = window.setInterval(() => {
+      current = (current + 1) % imageList.length;
+    }, interval) as unknown as number;
+  }
+
+  function stop() {
+    if (timer != null) {
+      clearInterval(timer as any);
+      timer = null;
+    }
+  }
+
+  onMount(() => start());
+  onDestroy(() => stop());
 </script>
 
 <section class="hero">
@@ -36,7 +66,7 @@
   </div>
 
   <div>
-    <img src={hero?.image?.src} alt={hero?.image?.alt}>
+    <img src={imageUrl} alt={hero?.image?.alt}>
   </div>
 
   <div>

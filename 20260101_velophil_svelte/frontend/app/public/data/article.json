@@ -28,7 +28,7 @@
   ],
   "hero": {
     "image": {
-      "src": "/assets/article/hero_section.jpg",
+      "src": ["/assets/article/bg1.jpg", "/assets/article/bg2.jpg"],
       "alt": "Drei Freundinnen mit Gravelbikes am Wasser",
       "width": 1425,
       "height": 768
