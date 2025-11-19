@@ -26,6 +26,7 @@
     { "label": "Urlaubsmagazin", "href": "#" },
     { "label": "Bikepacking in der Seenplatte und der Mecklenburgischen Schweiz", "href": "#" }
   ],
+
   "hero": {
     "image": {
       "src": ["/assets/article/bg1.jpg", "/assets/article/bg2.jpg"],

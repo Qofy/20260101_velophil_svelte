@@ -27,6 +27,8 @@ import figure from "../../public/assets/parallax/figure.jpg"
             die glücklichen Städter hier in den Schlaf. 
         </p>
     </div>
+
+    
    </div>
 </figure>
 

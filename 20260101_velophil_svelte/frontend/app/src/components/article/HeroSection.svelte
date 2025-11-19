@@ -69,7 +69,7 @@
     <img src={imageUrl} alt={hero?.image?.alt}>
   </div>
 
-  <div>
+  <!-- <div>
     <p>
       Es ist Freitagabend, 
       die Temperaturen sind mild, 
@@ -87,7 +87,7 @@
     <p>Übrigens: Besonders reizvoll ist die Bikepacking-Tour im Frühjahr. Denn dann kleidet die Mecklenburgische Schweiz 
       ihre Kurven und Hügel in ein blühendes Gewand aus Rapsgelb und Knallgrün, links und rechts des Weges kauen Kühe 
       gemächlich auf saftigen Halmen, und knorrige Kastanienbäume haben allerorts ihre Kerzen angesteckt.</p>
-  </div>
+  </div> -->
 
    <!-- {#if videoBlock}
     <VideoPlaceholder poster={videoBlock.poster} title={videoBlock.title} body={videoBlock.body} actions={videoBlock.actions} />
