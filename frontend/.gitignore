@@ -7,3 +7,6 @@ bun.lock
 package-lock.json
 test-results
 app/dist/
+dist
+backend
+referenc_slice

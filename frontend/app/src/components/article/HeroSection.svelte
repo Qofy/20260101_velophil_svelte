@@ -183,13 +183,11 @@
     /* background-color: #ce2f24; */
     background-position: center;
     background-size: cover;
-    animation-name: bgautoply;
-    /* animation-timing-function: linear; */
-    /* animation-timing-function: linear; */
+    /* animation-name: bgautoply;
     animation-fill-mode: forwards;
     animation-duration: 30s;
     animation-delay: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
   } 
 
   @keyframes bgautoply{
