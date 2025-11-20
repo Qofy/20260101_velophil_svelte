@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WASM + Svelte (v32)</title>
     <style>
+      /* Place in your global CSS (e.g., src/app.css or src/global.css) */
+@font-face {
+  font-family: 'Futura';
+  src: url('/fonts/Futura.woff2') format('woff2'),
+       url('/fonts/Futura.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold / other weights if you have them */
+@font-face {
+  font-family: 'Futura';
+  src: url('/fonts/Futura-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Use the font */
+body {
+  font-family: 'Futura', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
       html, body, #app { height: 100%; margin: 0; }
       body { background: #000; color: #fff; font-family: Helvetica, sans-serif; }
     </style>

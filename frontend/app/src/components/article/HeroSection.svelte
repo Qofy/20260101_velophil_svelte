@@ -118,6 +118,8 @@
 </section>
 
 <style>
+
+  
   .hero {
     /* position: relative; */
     padding-bottom: 2rem;
