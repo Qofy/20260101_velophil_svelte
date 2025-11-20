@@ -1,19 +1,20 @@
 <script lang="ts">
   import VideoPlaceholder from "./VideoPlaceholder.svelte";
   import { onDestroy, onMount } from "svelte";
+  import bg1 from "../../../public/assets/article/bg1.jpg"
 
-  interface HeroImage {
-    src: string | string[];
-    alt: string;
-    width?: number;
-    height?: number;
-  }
+  // interface HeroImage {
+  //   src: string | string[];
+  //   alt: string;
+  //   width?: number;
+  //   height?: number;
+  // }
 
   interface HeroContent {
     kicker?: string;
     headline: string;
     subline?: string;
-    image: HeroImage;
+    // image: HeroImage;
   }
 
   export let hero: HeroContent;
@@ -21,36 +22,36 @@
   export let author = '';
   export let date = '';
   
-  export let images: string[] = [];
-  export let interval: number = 4000;
-  export let autoplay: boolean = true;
+  // export let images: string[] = [];
+  // export let interval: number = 4000;
+  // export let autoplay: boolean = true;
 
-  let current = 0;
-  let timer: number | null = null;
+  // let current = 0;
+  // let timer: number | null = null;
 
   
-  $: heroImages = Array.isArray(hero?.image?.src) ? hero.image.src as string[] : (hero?.image?.src ? [hero.image.src as string] : []);
-  $: imageList = (images && images.length) ? images : heroImages;
-  $: imageUrl = imageList && imageList.length ? imageList[current] : (typeof hero?.image?.src === 'string' ? hero.image.src : undefined);
+  // $: heroImages = Array.isArray(hero?.image?.src) ? hero.image.src as string[] : (hero?.image?.src ? [hero.image.src as string] : []);
+  // $: imageList = (images && images.length) ? images : heroImages;
+  // $: imageUrl = imageList && imageList.length ? imageList[current] : (typeof hero?.image?.src === 'string' ? hero.image.src : undefined);
 
-  function start() {
-    if (!autoplay) return;
-    if (!imageList || imageList.length <= 1) return;
-    stop();
-    timer = window.setInterval(() => {
-      current = (current + 1) % imageList.length;
-    }, interval) as unknown as number;
-  }
+  // function start() {
+  //   if (!autoplay) return;
+  //   if (!imageList || imageList.length <= 1) return;
+  //   stop();
+  //   timer = window.setInterval(() => {
+  //     current = (current + 1) % imageList.length;
+  //   }, interval) as unknown as number;
+  // }
 
-  function stop() {
-    if (timer != null) {
-      clearInterval(timer as any);
-      timer = null;
-    }
-  }
+  // function stop() {
+  //   if (timer != null) {
+  //     clearInterval(timer as any);
+  //     timer = null;
+  //   }
+  // }
 
-  onMount(() => start());
-  onDestroy(() => stop());
+  // onMount(() => start());
+  // onDestroy(() => stop());
 </script>
 
 <section class="hero">
@@ -65,8 +66,8 @@
     </div>
   </div>
 
-  <div>
-    <img src={imageUrl} alt={hero?.image?.alt}>
+  <div style="background-image: url({bg1});" class="fig">
+    <!-- <img src="" alt="">  -->
   </div>
 
   <!-- <div>
@@ -123,6 +124,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 1rem;
   }
 
   .meta {
@@ -161,6 +163,54 @@
     font-weight: 500;
   }
 
+   .fig{
+    width: 100%;
+    height: 80dvh;
+    /* background-color: #ce2f24; */
+    background-position: center;
+    background-size: cover;
+    animation-name: bgautoply;
+    /* animation-timing-function: linear; */
+    /* animation-timing-function: linear; */
+    animation-fill-mode: forwards;
+    animation-duration: 30s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  } 
+
+  @keyframes bgautoply{
+    0%{
+      background-image: url('../../../public/assets/article/bg1.jpg');
+
+    }
+
+    20%{
+      background-image: url("../../../public/assets/article/bg2.jpg");
+
+
+    }
+
+    40%{
+           background-image: url('../../../public/assets/article/bg1.jpg');
+
+    }
+    
+     60%{
+      background-image: url("../../../public/assets/article/bg2.jpg")
+        
+      }
+
+      80%{
+           background-image: url('../../../public/assets/article/bg1.jpg');
+      
+
+      }
+
+      100%{
+      background-image: url("../../../public/assets/article/bg2.jpg")
+
+      }
+  }
   /* figure {
     margin: 0;
     border-radius: 16px;

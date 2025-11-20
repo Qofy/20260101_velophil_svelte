@@ -14,11 +14,11 @@
 </script>
 
 <nav class="nav">
-  <div class="brand">
+  <!-- <div class="brand"> -->
     <div class="logo">
    <img src={brand?.label}  alt="logo"/>
     </div>
-  </div>
+  <!-- </div> -->
   <div class="actions">
     {#each actions as action}
       <button type="button" class="nav-btn" aria-label={action.label}>
@@ -62,8 +62,10 @@
   }
 
    .logo {
-    width: 125px;
-    height: 50px;
+    width: 305px;
+    height: 30px;
+    display: flex;
+    align-items: center;
   }
 
   .actions {
