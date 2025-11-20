@@ -57,7 +57,7 @@ let currentScrollPos = window.pageYOffset;
         {:else if action.icon === 'search'}
           <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15zm0 2a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11zm7.44 9.56 4.5 4.5-1.88 1.88-4.5-4.5z"/></svg>
         {:else if action.icon === 'menu'}
-          <svg viewBox="0 0 24 24" role="img" aria-hidden="true" class="menu"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
         {/if}
         
         <span>{action.label}</span>
@@ -142,8 +142,7 @@ let currentScrollPos = window.pageYOffset;
 
   .navLink{
     background-color: #f59e0b;
-    /* display: flex; */
-    display: none;
+    display: flex;
     align-items: center;
     height: 40px;
     justify-content: center;
@@ -152,7 +151,8 @@ let currentScrollPos = window.pageYOffset;
     font-size: 1rem;
     font-weight: 500;
     position: sticky;
-    top: -100px;
+    top: 0;
+    z-index: 10;
   } 
 
   @media (max-width: 720px) {
