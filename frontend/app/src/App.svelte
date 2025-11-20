@@ -74,7 +74,7 @@
 
        {#each article.blocks as block, index}
   {#if block.type === 'text-only'}
-               <TextBlock body={block.body} header={block.header} />
+          <TextBlock body={block.body} header={block.header} />
   {/if}
 {/each}
 

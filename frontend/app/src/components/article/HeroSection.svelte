@@ -60,7 +60,7 @@
     <h1>{hero?.headline}</h1>
     
     <div class="credits">
-        {#if hero?.subline}<p class="subline"><span class="athr">Authour: </span>{hero.subline}</p>{/if}
+        {#if hero?.subline}<p class="subline"><span class="athr">Autor*in: </span>{hero.subline}</p>{/if}
         <span class="athr">{author}
           <span>:</span>
         <strong>{date}</strong>
@@ -133,7 +133,7 @@
   }
 
   .meta {
-    max-width: 820px;
+    /* max-width: 820px; */
     margin-bottom: 1.5rem;
   }
 
@@ -146,11 +146,12 @@
   }
 
   h1 {
-    font-size: clamp(2.4rem, 4vw, 3.8rem);
-    line-height: 1.1;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    /* line-height: 1.1; */
     color: #ce2f24;
     margin: 0 0 0.75rem;
     font-weight: 700;
+    min-width: 100%;
   }
 
   .subline {
@@ -179,7 +180,7 @@
 
    .fig{
     width: 100%;
-    height: 80dvh;
+    height: 95dvh;
     /* background-color: #ce2f24; */
     background-position: center;
     background-size: cover;
@@ -271,4 +272,11 @@
       width: auto;
     }
   } */
+
+   @media (max-width: 720px){
+    .fig{
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+   }
 </style>

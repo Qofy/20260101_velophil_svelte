@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount, tick } from "svelte";
+  import { onMount } from "svelte";
 
   export interface NavAction {
     label: string;
@@ -65,7 +65,7 @@ let currentScrollPos = window.pageYOffset;
         on:click={async () => {
           if (action.icon === 'search') {
             showSearch = true;
-            await tick();
+            // await tick();
             searchInput?.focus();
           } else if (action.icon === 'menu') {
             showNav = !showNav;
@@ -104,7 +104,7 @@ let currentScrollPos = window.pageYOffset;
   {#if showNav}
     <div class="navLink">
       {#each navlist as nav, index}
-        <a href="#" class="navLink">{nav}</a>
+        <a href="#" >{nav}</a>
       {/each}
     </div>
   {/if}
@@ -138,8 +138,8 @@ let currentScrollPos = window.pageYOffset;
   }
 
    .logo {
-    width: 305px;
-    height: 30px;
+    width: 30%;
+    height: 30%;
     display: flex;
     align-items: center;
   }
@@ -187,9 +187,11 @@ let currentScrollPos = window.pageYOffset;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   }
 
-   a{
+   .navLink a{
     text-decoration: none;
-    display: flex;
+     display: flex; 
+     color: #fff;
+
   }
 
   .navLink{
@@ -199,9 +201,9 @@ let currentScrollPos = window.pageYOffset;
     height: 40px;
     justify-content: center;
     gap: 5rem;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
+    /* color: #fff; */
+    font-size: .8rem;
+    font-weight: 300;
     /* position: sticky;
     top: 0;
     z-index: 10; */
@@ -211,5 +213,23 @@ let currentScrollPos = window.pageYOffset;
     .actions span {
       display: none;
     }
+    .navLink{
+      display: block;
+      flex-direction: column;
+      /* z-index: 100; */
+      height: 100%;
+      background-color: #ce2f24;
+    }
+
+    .navLink a{
+      /* background-color: #be220a; */
+      border: 1px solid red;
+      padding: .5rem;
+
+    }
+
+    /* .actions{
+      
+    } */
   }
 </style>
