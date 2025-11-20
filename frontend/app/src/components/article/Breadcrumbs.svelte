@@ -26,6 +26,9 @@
     font-size: 0.95rem;
     color: #111212;
     margin: 1rem 0 2rem;
+    /* position: sticky;
+    top: 100px;
+    z-index: 1; */
   }
 
   ol {

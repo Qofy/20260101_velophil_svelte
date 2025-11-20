@@ -145,7 +145,7 @@
     line-height: 1.1;
     color: #ce2f24;
     margin: 0 0 0.75rem;
-    font-weight: 300;
+    font-weight: 700;
   }
 
   .subline {

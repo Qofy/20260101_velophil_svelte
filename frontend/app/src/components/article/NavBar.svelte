@@ -48,7 +48,7 @@
     /* background: rgba(255, 255, 255, 0.92); */
     /* box-shadow: 0 1px 8px rgba(19, 33, 60, 0.08); */
     backdrop-filter: blur(8px);
-   background-color: #f4b03b;
+   background-image: linear-gradient(180deg, #e0d5bb, #e3d9c0);
 
   }
 
@@ -84,7 +84,7 @@
     font: inherit;
     font-weight: 300;
     font-size: 13px;
-    color: #ffff;
+     color: #ce2f24;
     letter-spacing: 0.02em;
     cursor: pointer;
     padding: 0.35rem 0.5rem;
