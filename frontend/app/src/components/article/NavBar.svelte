@@ -29,6 +29,7 @@
         {:else if action.icon === 'menu'}
           <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
         {/if}
+        
         <span>{action.label}</span>
       </button>
     {/each}

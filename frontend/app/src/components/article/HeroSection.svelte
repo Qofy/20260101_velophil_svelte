@@ -58,14 +58,17 @@
   <div class="meta">
     <p class="eyebrow">{eyebrow}</p>
     <h1>{hero?.headline}</h1>
-    {#if hero?.subline}<p class="subline">{hero.subline}</p>{/if}
+    
     <div class="credits">
-      <span>{author}</span>
-      <span>·</span>
-      <span>{date}</span>
-    </div>
-  </div>
+        {#if hero?.subline}<p class="subline"><span class="athr">Authour: </span>{hero.subline}</p>{/if}
+        <span class="athr">{author}
+          <span>:</span>
+        <strong>{date}</strong>
+        </span>
+        
 
+      </div>
+    </div>
   <div style="background-image: url({bg1});" class="fig">
     <!-- <img src="" alt="">  -->
   </div>
@@ -124,7 +127,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 
   .meta {
@@ -153,15 +156,24 @@
         color: #1f1d1d;
     margin: 0 0 1rem;
     font-weight: 500;
+   
+  }
+
+  .athr{
+    font-weight: 300;
   }
 
   .credits {
     display: flex;
-    gap: 0.5rem;
+    /* gap: 0.5rem; */
         color: #1f1d1d;
     font-size: 0.95rem;
     font-weight: 500;
+    flex-direction: column;
+    margin: 0;
   }
+
+  
 
    .fig{
     width: 100%;
