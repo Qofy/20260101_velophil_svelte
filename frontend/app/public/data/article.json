@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "category": "Urlaubsmagazin",
+    "title": "Cycling means above all practical mobility. It is the best way to get everyday life in Berlin in a flexible and environmentally conscious way. A bigger bike trip is still on my Amazing",
+    "eyebrow": "Velophil.Alt-Moabit 72 10555 Berlin, Mail: team@velophil.de",
+    "author": "Workshop",
+    "date": "Mon to Fri 9-11 and 14-19",
+    "badge": {
+      "label": "Gefördert durch",
+      "logo": "/assets/article/top_section.png",
+      "alt": "Hinweis auf Förderung"
+    }
+  },
+  "nav": {
+    "brand": {
+      "label": "/assets/article/logo.png"
+    },
+    "actions": [
+      { "label": "Karte", "icon": "map" },
+      { "label": "Suche", "icon": "search" },
+      { "label": "Menü", "icon": "menu" }
+    ]
+  },
+  "breadcrumbs": [
+    { "label": "Startseite", "href": "#" },
+    { "label": "Urlaubsmagazin", "href": "#" },
+    { "label": "Bikepacking in der Seenplatte und der Mecklenburgischen Schweiz", "href": "#" }
+  ],
+
+  "hero": {
+    "image": {
+      "src": ["/assets/article/bg1.jpg", "/assets/article/bg2.jpg"],
+      "alt": "Drei Freundinnen mit Gravelbikes am Wasser",
+      "width": 1425,
+      "height": 768
+    },
+    "kicker": "Bikepacking",
+    "headline": "Cycling means above all practical mobility. It is the best way to get everyday life in Berlin in a flexible and environmentally conscious way. A bigger bike trip is still on my Amazing",
+    "subline": "Mon to Fri 12:30-19, Saturday 10-16. 'Advice gladly with appointment'."
+  },
+  "blocks": [
+    {
+      "type": "text-only",
+      "header": "Service ist unsere Stärke!",
+      "body": [
+        "Wir bieten exzellenten Werkstattservice, den Schlauch-Automaten für Pannen nach Feierabend, Speichenanfertigung, Techniktipps, Pflegetipps und mehr.",
+        "Von hier aus geht es für die drei Freunde auf Gravelwegen und kleinen Landsträßchen weiter, vorbei am blau glitzernden Feisnecksee und der Binnenmüritz bis in den beschaulichen Kurort Waren. Nicht minder beschaulich präsentiert sich auch der folgende Uferweg entlang des Tiefwarensees: Bemooste Kastanien, Eichen und Linden ragen übers Wasser, küssen bisweilen die Oberfläche des Sees. Und der scheint den Bikepackern zuzurufen: »Raus aus den Klamotten und rein ins Wasser!« Und warum auch nicht? Bei entsprechenden Temperaturen ist so eine Erfrischung doch mehr als willkommen!",
+        "...rund ums Fahrrad.Neben dem Verkauf und der Wartung von Fahrrädern beschäftigen wir uns auch noch mit anderen Dingen. Ob Reiseberichte, Ausfahrten, Ergonomieschulungen, Fahrtechnik- oder Reparaturkurse - wir sind mehr als „nur“ ein Fahrradladen. Auch interessante Veranstaltungen von Kollegen und anderen machen wir hier gerne publik."
+      ]
+    },
+
+    
+    {
+      "type": "video",
+      "poster": "/assets/article/section1.png",
+      "title": "YouTube Video blockiert",
+      "body": "Entsprechend Ihrer Einwilligungseinstellungen werden Inhalte von „YouTube Video“ derzeit blockiert. Klicken Sie auf „Mehr Infos“, um Details zu dieser Einbindung einzusehen und anschließend eine informierte Entscheidung treffen zu können. Klicken Sie auf „Zustimmen“, um die Einbindung zuzulassen und den Inhalt nachzuladen.",
+      "actions": [
+        { "label": "Mehr Infos", "variant": "secondary" },
+        { "label": "Zustimmen", "variant": "primary" }
+      ]
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-1",
+      "width": "full",
+      "align": "center",
+      "spacing": 160,
+      "caption": "Grünblauer Auftakt in Neustrelitz"
+    },
+    {
+      "type": "section",
+      "title": "Freitagabend in Neustrelitz",
+      "body": [
+        "»Vorsicht an Gleis 3! Der Regionalexpress aus Berlin fährt ein.« Gerade einmal eine Stunde und fünfzehn Minuten hat er aus dem Zentrum der Hauptstadt bis hierher gebraucht. Und das Beste: Die Räder samt Gepäck hat er gleich mit befördert.",
+        "Mit einem kleinen Schlenker zur historischen Orangerie beginnt das Gravel-Abenteuer. Unterwegs sind die Seen immer ganz nah und die nass glänzende Uferpromenade von Neustrelitz ist der perfekte Spot für den ersten Sonnenuntergang der Tour."
+      ],
+      "image": {
+        "src": "/assets/article/segment_06.png",
+        "alt": "Pause am See"
+      }
+    },
+    {
+      "type": "quote",
+      "quote": "Nichts als Naturgeräusche und sanft rauschende Baumwipfel begleiten die glücklichen Städter hier in den Schlaf.",
+      "cite": "Bikepacking-Tagebuch"
+    },
+    {
+      "type": "section",
+      "title": "Nichts für Kalorienzähler",
+      "subtitle": "Einkehrschwung bei Üdi's Rastplatz",
+      "flip": true,
+      "body": [
+        "Wer am nächsten Morgen ausschläft und keine Kalorien zählen muss, sollte einen Frühstücks-Stopp im benachbarten Biergarten nicht versäumen.",
+        "Üppige Kuchen, herzhafte Fischbrötchen, leckerer Kaffee und andere Kleinigkeiten geben Kraft für den zweiten Tag im Sattel – und hinterm Haus steht eine Service-Station mit Kompressor-Luftpumpe bereit."
+      ],
+      "image": {
+        "src": "/assets/article/segment_07.png",
+        "alt": "Schwedischer Hof"
+      }
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-1",
+      "width": "full",
+      "align": "right",
+      "spacing": 120,
+      "caption": "Blick auf die Kranichrast"
+    },
+    {
+      "type": "section",
+      "title": "Hier läuft's rund",
+      "flip": false,
+      "body": [
+        "Stop and go entlang des Wegweisers: Immer den Holztafeln nach führt die Route weiter Richtung Waren.",
+        "Der Tiefwarensee ist wunderschön anzusehen und perfekt für einen Sprung ins kühle Nass. Bei entsprechenden Temperaturen ist eine Erfrischung mehr als willkommen."
+      ],
+      "image": {
+        "src": "/assets/article/segment_08.png",
+        "alt": "Wegweiser in der Mecklenburgischen Schweiz"
+      }
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-3",
+      "width": "full",
+      "align": "left",
+      "spacing": 120,
+      "caption": "Saldpassage & Wegweiser"
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-3",
+      "width": "full",
+      "align": "left",
+      "spacing": 120,
+      "caption": "Waldpassage & Wegweiser"
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-3",
+      "width": "full",
+      "align": "left",
+      "spacing": 120,
+      "caption": "Waldpassage & Wegweiser"
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-3",
+      "width": "full",
+      "align": "left",
+      "spacing": 120,
+      "caption": "Waldpassage & Wegweiser"
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-3",
+      "width": "full",
+      "align": "center",
+      "spacing": 160,
+      "caption": "Kaffee, Kuchen & Kettenöl"
+    },
+    {
+      "type": "section",
+      "title": "Stop and go bei Üdi's Rastplatz",
+      "flip": true,
+      "body": [
+        "Im Schatten alter Kastanien rollt das Trio zum nächsten Boxenstopp. Ein Herz für Radfahrer hat Üdi auch: Hinterm Haus steht eine Service-Station mit Kompressor bereit.",
+        "Von hier aus geht es über kleine Landsträßchen weiter bis in den behaglichen Kurort Waren. Nicht minder beschaulich präsentiert sich auch der folgende Uferweg am Tiefwarensee – er scheint den Bikepackern zuzuwinken: Raus aus den Klamotten und rein ins Wasser!"
+      ],
+      "image": {
+        "src": "/assets/article/segment_10.png",
+        "alt": "Bikepacking-Team am Feldweg"
+      }
+    },
+    {
+      "type": "parallax",
+      "sceneId": "scene-3",
+      "width": "full",
+      "align": "center",
+      "spacing": 140,
+      "caption": "Aufbruch Richtung Waren"
+    },
+    {
+      "type": "section",
+      "title": "Ruhe und Musik auf Schloss Ulrichshusen",
+      "subtitle": "Perfekter Zwischenstopp",
+      "flip": false,
+      "body": [
+        "Nach ein paar weiteren Kilometern wartet Schloss & Gut Ulrichshusen mit einem Park zum Durchatmen.",
+        "Wer mag, lauscht in der Konzertscheune klassischer Musik, besucht das Gutscafé oder rollt direkt weiter Richtung Peene und Demmin."
+      ],
+      "image": {
+        "src": "/assets/article/segment_09.png",
+        "alt": "Schloss Ulrichshusen"
+      }
+    },
+    {
+      "type": "gallery",
+      "title": "Unterwegs Impressionen",
+      "items": [
+        { "src": "/assets/article/segment_10.png", "alt": "Schotterpassage" },
+        { "src": "/assets/article/segment_12.png", "alt": "Abkühlung am Kanal" },
+        { "src": "/assets/article/segment_15.png", "alt": "Aussicht ins Grüne" }
+      ]
+    }
+  ],
+  "parallaxScenes": [
+    {
+      "id": "scene-1",
+      "layers": [
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_1.png", "alt": "Luftbild Schlossgarten" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_2.png", "alt": "Kartenoverlay" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_3.png", "alt": "Schrift Ebene 1" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_4.png", "alt": "Schrift Ebene 2" },
+        { "src": "/assets/parallax/scene1/20251115_1658_19_velo_animate_scene_1_part_5.png", "alt": "Textabschnitt" }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "layers": [
+        { "src": "/assets/bike/b1.png", "alt": "Kaffeepause" },
+        { "src": "/assets/bike/b2.png", "alt": "Freunde am Tisch" },
+        { "src": "/assets/bike/b3.png", "alt": "Textlayer 1" },
+        { "src": "/assets/bike/b4.png", "alt": "Textlayer 2" },
+        { "src": "/assets/bike/b5.png", "alt": "Textlayer 2" },
+        { "src": "/assets/bike/b6.png", "alt": "Textlayer 2" }
+      ]
+    }
+  ],
+  "sidebar": {
+    "modules": [
+      {
+        "type": "map",
+        "title": "In der Nähe",
+        "image": "/assets/article/segment_13.png",
+        "pois": ["Neustrelitz", "Waren (Müritz)", "Schloss Ulrichshusen"]
+      },
+      {
+        "type": "links",
+        "title": "Weitere Reviere",
+        "items": [
+          "Von Neustrelitz zur Feldberger Seenlandschaft",
+          "Gravel-Abenteuer zwischen Rostock und Demmin",
+          "Sieben Tage auf dem Eiszeitroute-Rundkurs",
+          "Kurzurlaub in der Mecklenburgischen Schweiz"
+        ]
+      }
+    ]
+  },
+
+  "splitview": {
+    "header": "Ruhe und Musik auf Schloss Ulrichshusen",
+    "head": "Perfekter Zwischenstopp für eine Bikepacking-Tour",
+    "body": [
+      "Nach ein paar weiteren Kilometern durch ebenso üppige wie liebliche Natur wartet mit dem Schloss & Gut Ulrichshusen am gleichnamigen See ein echtes Highlight. Fernab jeder Hektik herrscht rund um dieses Kleinod aus rotem Backstein nichts als Stille – nur unterbrochen vom Zwitschern der Vögel und dem Quaken der Frösche. Dabei hat das seit über 800 Jahren in Familienbesitz befindliche Haus eine turbulente Geschichte zu erzählen: Zuletzt brannte es 1987 aus ungeklärter Ursache bis auf die Grundmauern nieder, wurde ab 1993 liebevoll wieder aufgebaut und 2001 neu eröffnet: Mit Hotelzimmern in Gutshaus, Pferdestall, Schloss, in der Stellmacherei sowie in der Wassermühle, aber auch Ferienwohnungen, einem Restaurant und der Konzertscheune. Hier geben sich alljährlich im Rahmen der Festspiele Mecklenburg-Vorpommern hochkarätige Solisten und Orchester – von Anne-Sophie Mutter bis hin zu Daniel Hope – die Klinke in die Hand.",
+      "Vom Schloss aus fahren die drei Freunde über kleine, von Bruchmauern gesäumte Sträßchen terrassenförmig hinab bis zum Malchiner See. Dabei schweift ihr Blick über pittoreske Dörfchen, hübsche Wälder und Felder; Baumalleen spenden Schatten und Luft, die wie frisch gewaschen wirkt."
+    ]
+  },
+  "footer": {
+    "cta": {
+      "title": "Lust auf mehr Mikroabenteuer?",
+      "body": "Melde dich für den Newsletter an und erhalte monatliche Inspirationen aus MV.",
+      "action": "Newsletter abonnieren"
+    },
+    "legal": ["Datenschutz", "Impressum", "Kontakt"]
+  }
+}

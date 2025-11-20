@@ -1,0 +1,10 @@
+package-lock.json
+bun.lock
+pnpm-lock.yaml
+bun.lock
+package-lock.json
+.vscode
+.yarn
+vendor
+deps
+node_modules
