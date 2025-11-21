@@ -32,7 +32,7 @@
   ]
 
   onMount(()=>{
-    let prevScrollpos = window.pageYOffset;
+   let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 let currentScrollPos = window.pageYOffset;
   const navElement = document.getElementById("nav");
@@ -45,6 +45,7 @@ let currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+
   })
 </script>
 

@@ -6,7 +6,7 @@ import bg from "../../public/assets/article/fggb.jpg"
 <figure class="figure" style="background-image: url('{figure}');">
    <div class="overFlow">
     <div style="background-image: url('{bg}');" class="rep"></div>
-    <div style="background-color: #f3f6fb;">
+    <div style="background-color: #f3f6fb;" class="text-cont" >
         <h1 style="color: #ce2f24;">Fahrrad-Reparaturkurse</h1>
         <p>
            In den Wintermonaten von November 
@@ -72,11 +72,78 @@ background-size: cover;
 }
 
 .overFlow div{
-height: 50%;
+height: 100%;
 width: 100%;
 }
 .overFlow div:last-child{
     padding: 2rem 5rem;
     font-size: 1.3rem;
 }
+
+@media (max-width: 720px) {
+  .figure {
+    width: 100vw;
+    height: auto;
+    min-height: 109vh;
+  }
+
+  .overFlow {
+    /* position: static10 */
+    transform: none;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: none;
+    border-radius: 0;
+    background: #fff;
+    display: block;
+  }
+  .rep {
+    /* height: clamp(200px, 36vw, 360px); */
+    height: 100% !important;
+  }
+
+  .overFlow div{
+    /* height: 100vh; */
+    width: 100%;
+  }
+
+  .overFlow > div:last-child {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+}
+
+
+@media (min-width: 721px) and (max-width: 900px) {
+  .figure {
+    height: clamp(420px, 55vw, 640px);
+  }
+
+  .overFlow {
+    /* right: 4%; */
+   transform: none;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: none;
+    border-radius: 0;
+    background: #fff;
+    display: block;
+  }
+}
+
+@media (min-width: 901px){
+  .overFlow{
+    display: block;
+  }
+ }
+
+ .overFlow div{
+  height: 50%;
+ }
+
+ .text-cont{
+  height: 140% !important;
+ }
+
 </style>

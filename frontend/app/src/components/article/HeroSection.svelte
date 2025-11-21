@@ -146,7 +146,7 @@
   }
 
   h1 {
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-size: clamp(1.2rem, 3vw, 3rem);
     /* line-height: 1.1; */
     color: #ce2f24;
     margin: 0 0 0.75rem;
@@ -278,5 +278,6 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
+    
    }
 </style>
